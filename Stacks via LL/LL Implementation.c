@@ -8,15 +8,22 @@ struct Node
 
 void traverse()
 {
-    struct Node *temp = top;
+    struct Node* temp = top;
+    if (top == NULL)
+    {
+        printf("\nStack Underflow");
+        return;
+    }
     printf("[ ");
-    while (temp->next != NULL)
+    while (temp != NULL)
     {
         printf("  (%d)  ", temp->data);
         temp = temp->next;
     }
     printf(" ]");
 }
+
+
 
 void push(int value)
 {
