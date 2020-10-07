@@ -46,7 +46,7 @@ int main()
     root->right->right = newNode(7);
     root->right->left = newNode(12);
     root->left->left = newNode(27);
-    root->left->right= newNode(27);
+    root->left->right= newNode(54);
     printf("\n Preorder Traversal:");
     preorder(root);
     printf("\n Inorder Traversal:");
